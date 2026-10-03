@@ -1,6 +1,7 @@
 # Form BIODATA Mahasiswa
 
-https://github.com/SabiqF/Form-Biodata
+[https://github.com/SabiqF/Form-Biodata](https://sabiqf.github.io/Form-Biodata/
+)
 
 Project ini dibuat untuk memenuhi **Tugas Individu Pertemuan 02** dengan tema:
 
