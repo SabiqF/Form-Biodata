@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Biodata Mahasiswa</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <div class="header">
+        <img class="logo" src="images/logo.png" alt="Logo Universitas Pelita Bangsa">
+        <div>
+          <p class="eyebrow">TUGAS INDIVIDU • PERTEMUAN 02</p>
+          <h1>Form Biodata Mahasiswa</h1>
+          <p class="subtitle">Lengkapi data diri dengan benar sebelum menyimpan.</p>
+        </div>
+      </div>
+
+      <form id="biodataForm" novalidate>
+        <div class="section-title">
+          <span>01</span>
+          <h2>Data Pribadi</h2>
+        </div>
+
+        <div class="grid">
+          <div class="form-group full">
+            <label for="nama">Nama Lengkap <span>*</span></label>
+            <input type="text" id="nama" name="nama" placeholder="Contoh: Budi Santoso">
+            <small class="error" id="namaError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="nim">NIM <span>*</span></label>
+            <input type="text" id="nim" name="nim" inputmode="numeric" placeholder="Contoh: 23123456">
+            <small class="error" id="nimError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="prodi">Program Studi <span>*</span></label>
+            <select id="prodi" name="prodi">
+              <option value="">-- Pilih Program Studi --</option>
+              <option>Teknik Informatika</option>
+              <option>Sistem Informasi</option>
+              <option>Manajemen Informatika</option>
+              <option>Teknik Komputer</option>
+              <option>Bisnis Digital</option>
+            </select>
+            <small class="error" id="prodiError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="tempatLahir">Tempat Lahir <span>*</span></label>
+            <input type="text" id="tempatLahir" name="tempatLahir" placeholder="Contoh: Bogor">
+            <small class="error" id="tempatLahirError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="tanggalLahir">Tanggal Lahir <span>*</span></label>
+            <input type="date" id="tanggalLahir" name="tanggalLahir">
+            <small class="error" id="tanggalLahirError"></small>
+          </div>
+
+          <div class="form-group full">
+            <label>Jenis Kelamin <span>*</span></label>
+            <div class="radio-group">
+              <label class="radio-card">
+                <input type="radio" name="jenisKelamin" value="Laki-laki">
+                <span>Laki-laki</span>
+              </label>
+              <label class="radio-card">
+                <input type="radio" name="jenisKelamin" value="Perempuan">
+                <span>Perempuan</span>
+              </label>
+            </div>
+            <small class="error" id="jenisKelaminError"></small>
+          </div>
+        </div>
+
+        <div class="section-title second">
+          <span>02</span>
+          <h2>Kontak</h2>
+        </div>
+
+        <div class="grid">
+          <div class="form-group">
+            <label for="noHp">No. HP <span>*</span></label>
+            <input type="tel" id="noHp" name="noHp" inputmode="numeric" placeholder="Contoh: 081234567890">
+            <small class="error" id="noHpError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email <span>*</span></label>
+            <input type="email" id="email" name="email" placeholder="Contoh: nama@email.com">
+            <small class="error" id="emailError"></small>
+          </div>
+
+          <div class="form-group full">
+            <label for="alamat">Alamat <span>*</span></label>
+            <textarea id="alamat" name="alamat" rows="4" placeholder="Masukkan alamat lengkap"></textarea>
+            <small class="error" id="alamatError"></small>
+          </div>
+        </div>
+
+        <div id="message" class="message" role="alert" aria-live="polite"></div>
+
+        <div class="actions">
+          <button type="button" class="btn secondary" id="resetBtn">Reset</button>
+          <button type="submit" class="btn primary">Simpan Biodata</button>
+        </div>
+      </form>
+
+      <section id="resultCard" class="result hidden">
+        <div class="result-header">
+          <div>
+            <p class="eyebrow">DATA TERSIMPAN</p>
+            <h2>Hasil Biodata</h2>
+          </div>
+          <div class="check">✓</div>
+        </div>
+        <div id="resultContent" class="result-grid"></div>
+      </section>
+    </section>
+
+    <footer>Form Biodata • Project Tugas Individu</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
