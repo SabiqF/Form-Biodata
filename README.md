@@ -100,22 +100,10 @@ Screenshot yang disarankan untuk dikumpulkan:
 ### Screenshot 1 — Tampilan awal
 Tampilkan seluruh form dalam kondisi rapi sebelum diisi.
 
-### Screenshot 2 — Validasi input
-Kosongkan beberapa data atau masukkan data yang salah, kemudian klik **Simpan Biodata**. Screenshot tampilan pesan/error validasi.
-
-### Screenshot 3 — Data berhasil
+### Screenshot 2 — Data berhasil
 Isi seluruh data dengan benar, klik **Simpan Biodata**, lalu screenshot bagian pesan berhasil dan hasil biodata.
 
-## 7. Kesesuaian dengan Rubrik
-
-| Kriteria | Implementasi |
-|---|---|
-| UI & Struktur (30%) | Tampilan form rapi, responsif, memiliki bagian Data Pribadi dan Kontak |
-| Event & Logika (30%) | Tombol Simpan melakukan validasi dan menampilkan hasil; tombol Reset mengosongkan form |
-| Validasi Input (25%) | Validasi field kosong, angka, email, pilihan, dan panjang nomor HP |
-| Kerapian Kode (15%) | HTML, CSS, dan JavaScript dipisahkan ke file masing-masing |
-
-## 8. Teknologi
+## 7. Teknologi
 
 - HTML5
 - CSS3
